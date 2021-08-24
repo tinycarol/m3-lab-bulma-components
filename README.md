@@ -37,9 +37,11 @@ To get Bulma, install the npm package:
 $ npm install bulma
 ```
 
-You will have to import Bulma CSS in every component that will use it. You can do it with the following line:
+You will have to import Bulma CSS in the `index.js` file so the styles will be loaded into your app. You can do it with the following line:
 
-```javascript
+```javascript 
+// index.js
+
 import 'bulma/css/bulma.css';
 ```
 
