@@ -1,5 +1,4 @@
 import React from "react";
-import "bulma/css/bulma.css";
 
 export default class Navbar extends React.Component {
   render() {
@@ -37,7 +36,7 @@ export default class Navbar extends React.Component {
             <div className="field is-grouped">
               <p className="control">
                 <a
-                  class="bd-tw-button button"
+                  className="bd-tw-button button"
                   data-social-network="Twitter"
                   data-social-action="tweet"
                   data-social-target="https://bulma.io"
