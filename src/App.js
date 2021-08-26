@@ -1,8 +1,12 @@
-import './App.css';
+import "./App.css";
+import "bulma/css/bulma.css";
+import Signup from "./components/signup/Signup";
 
 function App() {
   return (
-    <h1>Bulma</h1>
+    <div className="App">
+      <Signup />
+    </div>
   );
 }
 
