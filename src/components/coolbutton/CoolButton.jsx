@@ -1,36 +1,33 @@
 import React from "react";
 import "./CoolButton.css";
 
-// {
-//     isActive: 'is-active',
-//     isBlack: 'is-black',
-//     isCentered: 'is-centered',
-//     isDanger: 'is-danger',
-//     isDark: 'is-dark',
-//     isFocused: 'is-focused',
-//     isGrouped: 'is-grouped',
-//     isHovered: 'is-hovered',
-//     isInfo: 'is-info',
-//     isInverted: 'is-inverted',
-//     isLarge: 'is-large',
-//     isLight: 'is-light',
-//     isLink: 'is-link',
-//     isLoading: 'is-loading',
-//     isMedium: 'is-medium',
-//     isOutlined: 'is-outlined',
-//     isPrimary: 'is-primary',
-//     isRight: 'is-right',
-//     isRounded: 'is-rounded',
-//     isSelected: 'is-selected',
-//     isSmall: 'is-small',
-//     isStatic: 'is-static',
-//     isSuccess: 'is-success',
-//     isText: 'is-text',
-//     isWarning: 'is-warning',
-//     isWhite: 'is-white',
-//   }
-
-const getButtonStyles = (className, isSmall, isDanger, isSuccess) => {
+const getButtonStyles = (
+  className,
+  isSmall,
+  isDanger,
+  isSuccess,
+  isCentered,
+  isDark,
+  isFocused,
+  isGrouped,
+  isHovered,
+  isInfo,
+  isInverted,
+  isLarge,
+  isLink,
+  isLight,
+  isLoading,
+  isActive,
+  isMedium,
+  isOutlined,
+  isPrimary,
+  isRight,
+  isRounded,
+  isSelected,
+  isText,
+  isWarning,
+  isWhite
+) => {
   let currentStyle = "";
   if (className) {
     currentStyle += `${className}`;
@@ -47,15 +44,131 @@ const getButtonStyles = (className, isSmall, isDanger, isSuccess) => {
   if (isSuccess) {
     currentStyle += " is-success ";
   }
+  if (isCentered) {
+    currentStyle += " is-centered ";
+  }
+  if (isDark) {
+    currentStyle += " is-dark ";
+  }
+  if (isFocused) {
+    currentStyle += " is-focused ";
+  }
+  if (isGrouped) {
+    currentStyle += " is-grouped ";
+  }
+  if (isHovered) {
+    currentStyle += " is-hovered ";
+  }
+  if (isInfo) {
+    currentStyle += " is-info ";
+  }
+  if (isInverted) {
+    currentStyle += " is-inverted ";
+  }
+  if (isLarge) {
+    currentStyle += " is-large ";
+  }
+  if (isLight) {
+    currentStyle += " is-light ";
+  }
+  if (isLink) {
+    currentStyle += " is-link ";
+  }
+  if (isLoading) {
+    currentStyle += " is-loading ";
+  }
+  if (isActive) {
+    currentStyle += " is-active ";
+  }
+  if (isMedium) {
+    currentStyle += " is-medium ";
+  }
+  if (isOutlined) {
+    currentStyle += " is-outlined ";
+  }
+  if (isPrimary) {
+    currentStyle += " is-primary ";
+  }
+  if (isRight) {
+    currentStyle += " is-right ";
+  }
+  if (isRounded) {
+    currentStyle += " is-rounded ";
+  }
+  if (isSelected) {
+    currentStyle += " is-selected ";
+  }
+  if (isText) {
+    currentStyle += " is-text ";
+  }
+  if (isWarning) {
+    currentStyle += " is-warning ";
+  }
+  if (isWhite) {
+    currentStyle += " is-white ";
+  }
   return currentStyle;
 };
 
 export default class CoolButton extends React.Component {
   render() {
-    const { className, isSmall, isDanger, isSuccess, children } = this.props;
+    const {
+      children,
+      className,
+      isSmall,
+      isDanger,
+      isSuccess,
+      isCentered,
+      isDark,
+      isFocused,
+      isGrouped,
+      isHovered,
+      isInfo,
+      isInverted,
+      isLarge,
+      isLink,
+      isLight,
+      isLoading,
+      isActive,
+      isMedium,
+      isOutlined,
+      isPrimary,
+      isRight,
+      isRounded,
+      isSelected,
+      isText,
+      isWarning,
+      isWhite,
+    } = this.props;
     return (
       <button
-        className={getButtonStyles(className, isSmall, isDanger, isSuccess)}
+        className={getButtonStyles(
+          className,
+          isSmall,
+          isDanger,
+          isSuccess,
+          isCentered,
+          isDark,
+          isFocused,
+          isGrouped,
+          isHovered,
+          isInfo,
+          isInverted,
+          isLarge,
+          isLink,
+          isLight,
+          isLoading,
+          isActive,
+          isMedium,
+          isOutlined,
+          isPrimary,
+          isRight,
+          isRounded,
+          isSelected,
+          isText,
+          isWarning,
+          isWhite
+        )}
       >
         {children}
       </button>
