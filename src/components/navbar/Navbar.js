@@ -1,4 +1,6 @@
 import "./Navbar.css";
+import CoolButton from "../coolbutton/CoolButton";
+
 export default function Navbar() {
     return (
     <div className="Navbar">
@@ -26,12 +28,7 @@ export default function Navbar() {
             <div class="navbar-end">
             <div class="navbar-item">
                 <div class="buttons">
-                <a class="button is-primary">
-                    <strong>Sign up</strong>
-                </a>
-                <a class="button is-light">
-                    Log in
-                </a>
+                <CoolButton />
                 </div>
             </div>
             </div>

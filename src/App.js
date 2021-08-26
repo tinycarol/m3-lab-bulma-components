@@ -1,12 +1,15 @@
 import './App.css';
 import Navbar from "./components/navbar/Navbar";
 import React from "react";
+import CoolButton from './components/coolbutton/CoolButton';
 
 export default class App extends React.Component {
   render() {
     return(
       <div className="App">
-        <Navbar />
+        <Navbar>
+          <CoolButton />
+        </Navbar>
       </div>
     )
   }
