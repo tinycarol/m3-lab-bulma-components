@@ -1,4 +1,4 @@
-import React from "react";
+import "./FormField.css";
 
 const FormField = ({ label }) => {
   const value = {};
