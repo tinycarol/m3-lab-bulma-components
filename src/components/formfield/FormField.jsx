@@ -1,6 +1,6 @@
 import "./FormField.css";
 
-const FormField = ({ label }) => {
+const getValues = (label) => {
   const value = {};
   if (label === "Name") {
     value.label = "Name";
@@ -10,15 +10,23 @@ const FormField = ({ label }) => {
     value.label = "Email";
     value.type = "email";
     value.placeholder = "e.g. alexsmith@gmail.com";
+  } else if (label === "Password") {
+    value.label = "Password";
+    value.type = "password";
+    value.placeholder = "e.g. jsdhGt5.64Xs?fe!";
   }
+  return value;
+};
+
+const FormField = ({ label }) => {
   return (
     <div className="field">
-      <label className="label">{value.label}</label>
+      <label className="label">{getValues(label).label}</label>
       <div className="control">
         <input
           className="input"
-          type={value.type}
-          placeholder={value.placeholder}
+          type={getValues(label).type}
+          placeholder={getValues(label).placeholder}
         />
       </div>
     </div>
