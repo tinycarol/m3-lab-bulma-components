@@ -1,6 +1,6 @@
 import "./FormField.css"
 
-export default ({label, type, placeholder}) => {
+let FormField = ({label, type, placeholder}) => {
     return (
         <div className='field'>
             <label className='label'>{label}</label>
@@ -10,3 +10,5 @@ export default ({label, type, placeholder}) => {
         </div>
     )
 }
+
+export default FormField
