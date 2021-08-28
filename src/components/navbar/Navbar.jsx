@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Navbar.css";
+import CoolButton from '../coolbutton/CoolButton'
 
 export default class Navbar extends React.Component {
   render() {
@@ -28,16 +29,10 @@ export default class Navbar extends React.Component {
           <div class="navbar-item">
             <div class="field is-grouped">
               <p class="control">
-                <a class="button is-info" href="#">
-                  <span>
-                  Login
-                  </span>
-                </a>
+                <CoolButton className='button is-info'>Login</CoolButton>
               </p>
               <p class="control">
-                <a class="button is-primary" href='#'>
-                  <span>Sign Up</span>
-                </a>
+                <CoolButton className='button is-primary'>Sign Up</CoolButton>
               </p>
             </div>
           </div>
