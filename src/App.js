@@ -1,9 +1,33 @@
 import './App.css';
+import Navbar from "./components/navbar/Navbar";
+import React from "react";
+import CoolButton from './components/coolbutton/CoolButton';
+import FormField from './components/formfield/FormField';
 
-function App() {
-  return (
-    <h1>Bulma</h1>
-  );
+// el contenido de los componentes se ponen antes de la clase
+
+const name = {
+  title: "Name",
+  example: "e.g Alex Smith"
 }
 
-export default App;
+
+const email = {
+  title: "Email",
+  example: "e.g. alexsmith@gmail.com"
+}
+
+
+export default class App extends React.Component {
+  render() {
+    return(
+      <div className="App">
+        <Navbar>
+          <CoolButton/>
+        </Navbar>
+          <FormField form={name}/>
+          <FormField form={email}/>
+      </div>
+    )
+  }
+}
