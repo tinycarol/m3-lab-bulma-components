@@ -1,21 +1,24 @@
-
 import "./FormField.css";
 import React from "react";
+
+
+
 export default class FormField extends React.Component {
     render() {
+
+        const { form } = this.props;
+
         return(
-        <div className="FromField">
+
+        // !!! Vale un mismo FIELD para las dos cosas
+
+        <div className="FormField">
             <div class="field">
-            <label class="label">Name</label>
-            <div class="control">
-                <input class="input" type="text" placeholder="e.g Alex Smith" />
-            </div>
-            </div>
-            <div class="field">
-            <label class="label">Email</label>
-            <div class="control">
-                <input class="input" type="email" placeholder="e.g. alexsmith@gmail.com" />
-            </div>
+                <label class="label">{form.title}</label>
+
+                <div class="control">
+                    <input class="input" type="text" placeholder={form.example}/>
+                </div>
             </div>
         </div>
         )

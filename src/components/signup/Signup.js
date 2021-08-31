@@ -7,6 +7,22 @@ import FormField from "../formfield/FormField";
 import CoolButton from "../coolbutton/CoolButton";
 
 
+const name = {
+  title: "Name",
+  example: "e.g Alex Smith"
+}
+
+
+const email = {
+  title: "Email",
+  example: "e.g. alexsmith@gmail.com"
+}
+
+
+const password = {
+  title: "Password",
+  example: "type between 6 and 8 characters"
+}
 
 
 
@@ -15,9 +31,9 @@ export default class Signup extends React.Component {
     return (
       <div className="Signup container">
         <Navbar />
-        <FormField label="Name" />
-        <FormField label="Email" />
-        <FormField label="Password" />
+        <FormField form={name} />
+        <FormField from={email} />
+        <FormField form={password} />
 
         <CoolButton className="CoolButton">Submit</CoolButton>
       </div>
