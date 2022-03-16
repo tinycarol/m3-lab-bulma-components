@@ -1,8 +1,9 @@
+import Navbar from './components/Navbar/Navbar.js';
 import './App.css';
 
 function App() {
   return (
-    <h1>Bulma</h1>
+    <Navbar/>
   );
 }
 
