@@ -1,5 +1,7 @@
 import React from "react";
 
+import CoolButton from "../coolButton/coolButton";
+
 class Navbar extends React.Component {
   render() {
     return (
@@ -29,7 +31,10 @@ class Navbar extends React.Component {
         <div className="navbar-end">
           <div className="navbar-item">
             <div className="field is-grouped">
-              <p className="control">
+
+            <CoolButton />
+            
+              {/* <p className="control">
                 <a className="bd-tw-button button" href="https://github.com/jgthms/bulma/releases/download/0.9.3/bulma-0.9.3.zip">
                   <span className="icon">
                     <i className="fas fa-download"></i>
@@ -44,7 +49,7 @@ class Navbar extends React.Component {
                   </span>
                   <span>Signup</span>
                 </a>
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
