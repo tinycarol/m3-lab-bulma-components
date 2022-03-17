@@ -3,8 +3,8 @@ function Navbar() {
     return (
       <nav className="navbar" role="navigation" aria-label="main navigation">
   <div className="navbar-brand">
-    <a className="navbar-item" href="https://bulma.io">
-      <img src="https://bulma.io/images/bulma-logo.png"/>
+    <a className="navbar-item">
+      <img src="https://bulma.io/images/bulma-logo.png" alt="bulma logo"/>
     </a>
 
   </div>

@@ -1,26 +1,17 @@
 import CoolButton from "../CoolButton/CoolButton"
-import FromField from "../FormField/FormField"
+import FormField from "../FormField/FormField"
 import Navbar from "../Navbar/Navbar"
+import Message from '../Message/Message';
 
-const SingUp = () => {
-  const name = {
-    title: "Name",
-    example: "e.g. Alex Smith"
-  }
-  const email = {
-    title: "Email",
-    example: "e.g. alexsmith@gmail.com"
-  }
-  const password = {
-    title: "Password",
-    example: "type your password"
-  }
-  
+const SingUp = ({children}) => {
   return (
     <div>
       <Navbar/>
-      <FromField />
-      <CoolButton>Submit</CoolButton>
+      <FormField label="Name" type="text" placeholder="e.g Alex Smith" />
+      <FormField label="Email" type="email" placeholder="e.g. alexsmith@gmail.com" />
+      <FormField label="Password" type="password" placeholder="type password between 4 and 8 chars" />
+      <CoolButton />
+      <Message />
     </div>
   )
 }

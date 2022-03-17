@@ -1,16 +1,18 @@
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
-import FormField from './components/FormField/FormField';
-import CoolButton from './components/CoolButton/CoolButton';
+// import Navbar from './components/Navbar/Navbar';
+// import FormField from './components/FormField/FormField';
+// import CoolButton from './components/CoolButton/CoolButton';
 import SingUp from './components/SingUp/SingUp';
 
 function App() {
   return (
     <div>
-    <Navbar>
+    {/* <Navbar>
       <CoolButton />
     </Navbar>
-    <FormField />
+    <FormField /> */}
+      <SingUp />
+    
     </div>
   );
 }
