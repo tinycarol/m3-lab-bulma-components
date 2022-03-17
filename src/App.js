@@ -1,12 +1,17 @@
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import FormField from './components/FormField/FormField';
+import CoolButton from './components/CoolButton/CoolButton';
+import SingUp from './components/SingUp/SingUp';
 
 function App() {
   return (
-    <Navbar />
-    <FormField label={label} type={type} placeholder={placeholder} />
-    <FormField label={label} type={type} placeholder={placeholder} />
+    <div>
+    <Navbar>
+      <CoolButton />
+    </Navbar>
+    <FormField />
+    </div>
   );
 }
 
