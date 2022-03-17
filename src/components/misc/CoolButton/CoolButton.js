@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react'
 
-const CoolButton = () => {
-    return (
-        <div>
-            
-        </div>
-    );
-};
+class CoolButton extends Component {
+    render() {
+      return (
+          <button className= {`button ${this.props.className}`}>
+            {this.props.children}
+          </button>
+      )
+    }
+  }
 
 export default CoolButton;
