@@ -1,7 +1,8 @@
-const CoolButton = (props) => {
+const CoolButton = ({ text, colorButton }) => {
+    console.log(colorButton)
     return (
         <div>
-            <button className="button is-rounded my-class is-danger is-small">{props.submit}</button>
+            <button className={`button is-rounded my-class is-${colorButton} is-small`}>{text}</button>
         </div>
     );
 

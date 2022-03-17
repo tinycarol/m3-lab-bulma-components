@@ -13,7 +13,7 @@ function Signup(){
          <Navbar/>
          <FormField label="Name" type="text" placeholder="e.g Alex Smith" />
          <FormField label="Email" type="email" placeholder="e.g AlexSmith@email.com" />
-         <CoolButton submit="submit" login="Login" signup="Signup"/>
+         <CoolButton text="submit" colorButton="success" />
          <Message/>
         </div>
     )
