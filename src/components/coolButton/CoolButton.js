@@ -1,5 +1,5 @@
 import React from "react";
-import "./coolButton.css";
+import "./CoolButton.css";
 
 class CoolButton extends React.Component {
     render () {

@@ -21,7 +21,7 @@ class FormField extends React.Component {
     }
 }*/
 
-//Esta clase funciona como una función genérica para sustituir los "this.props" por 
+//Esta clase funciona como una función genérica para sustituir los "this.props" por lo que quiera
 class FormField extends React.Component {
   render() {
     return (

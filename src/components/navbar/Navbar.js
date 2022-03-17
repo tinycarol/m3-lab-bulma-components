@@ -1,6 +1,6 @@
 import React from "react";
-
-import CoolButton from "../coolButton/coolButton";
+import "./Navbar.css"
+import CoolButton from "../coolButton/CoolButton";
 
 class Navbar extends React.Component {
   render() {
