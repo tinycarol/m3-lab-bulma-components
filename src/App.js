@@ -1,8 +1,11 @@
 import './App.css';
+import SignUp from './components/signUp/SignUp';
 
 function App() {
   return (
-    <h1>Bulma</h1>
+    <div>
+      <SignUp />
+    </div>
   );
 }
 
