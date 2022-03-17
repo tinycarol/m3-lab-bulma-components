@@ -1,11 +1,18 @@
 const FormField = (props) => {
-    return (
-      <div className='field'>
-        <label className='label'>{props.label}</label>
-        <type className="type">{props.type}</type>
-        <input className="input" placeholder={props.placeholder}/>
+  return (
+    <div className="form-container">
+      <div className="field">
+        <label className="label">{props.label}</label>
+        <div className="control">
+          <input
+            className="input"
+            type={props.type}
+            placeholder={props.placeholder}
+          />
+        </div>
       </div>
-    );
-  };
+    </div>
+  );
+};
 
-  export default FormField
+export default FormField;

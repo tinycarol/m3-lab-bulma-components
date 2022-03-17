@@ -1,3 +1,6 @@
+import CoolButton from "../CoolButton/CoolButton";
+
+
 function Navbar() {
   return (
     <nav className="navbar is-transparent">
@@ -87,7 +90,7 @@ function Navbar() {
                 <a
                   className="bd-tw-button button"
                   data-social-network="Twitter"
-                  data-social-action="tweet"
+                  data-social-action="Login"
                   data-social-target="https://bulma.io"
                   target="_blank"
                   href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms"
@@ -95,7 +98,7 @@ function Navbar() {
                   <span className="icon">
                     <i className="fab fa-twitter"></i>
                   </span>
-                  <span>Tweet</span>
+                  <span>Login</span>
                 </a>
               </p>
               <p className="control">
@@ -106,7 +109,7 @@ function Navbar() {
                   <span className="icon">
                     <i className="fas fa-download"></i>
                   </span>
-                  <span>Download</span>
+                  <span>Register</span>
                 </a>
               </p>
             </div>
@@ -116,5 +119,7 @@ function Navbar() {
     </nav>
   );
 }
+
+
 
 export default Navbar;
