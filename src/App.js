@@ -1,8 +1,11 @@
 import './App.css';
+import SignUp from './components/sign-up/SignUp';
 
 function App() {
   return (
-    <h1>Bulma</h1>
+    <div className='container mt-6 px-6'>
+      <SignUp/>
+    </div>
   );
 }
 
