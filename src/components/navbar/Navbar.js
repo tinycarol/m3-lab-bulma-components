@@ -1,3 +1,5 @@
+import CoolButton from "../button/CoolButton"
+
 function Navbar() {
   return(
     <nav className="navbar is-transparent">
@@ -15,8 +17,12 @@ function Navbar() {
       <div id="navbarExampleTransparentExample" className="navbar-menu">
         <div className="navbar-start">
           <a className="navbar-item" href="/">Home</a>
-          <a className="navbar-item" href="/">Login</a>
-          <a className="navbar-item" href="/">Signup</a>
+          <a className="navbar-item" href="/">
+            <CoolButton type="is-rounded is-danger large">Login</CoolButton>
+          </a>
+          <a className="navbar-item" href="/">
+            <CoolButton type="is-success large">Signup</CoolButton>
+          </a>
         </div>
       </div>
     </nav>
