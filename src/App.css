@@ -1,0 +1,13 @@
+.formSection{
+    display: flex;
+    justify-content: center;
+}
+
+.messageSection,
+.cardSection{
+    display: flex;
+}
+
+.card{
+    background-color: rgb(64, 235, 206) !important;
+}
