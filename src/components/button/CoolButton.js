@@ -3,12 +3,10 @@ import React, { Component } from 'react';
 class CoolButton extends Component {
   render() {
     return (
-      <div className="columns">
-        <div className="column is-half is-offset-one-quarter">
-          <button className={`button ${this.props.type}`}>
-            {this.props.children}
-          </button>
-        </div>
+      <div>
+        <button className={`button ${this.props.type} large`}>
+          {this.props.children}
+        </button>
       </div>
     )
   }

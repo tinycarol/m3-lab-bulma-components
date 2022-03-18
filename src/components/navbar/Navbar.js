@@ -4,7 +4,7 @@ function Navbar() {
   return(
     <nav className="navbar is-transparent">
       <div className="navbar-brand">
-        <a className="navbar-item" href="#">
+        <a className="navbar-item" href="/">
           <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28" />
         </a>
         <div className="navbar-burger" data-target="navbarExampleTransparentExample">
@@ -18,10 +18,10 @@ function Navbar() {
         <div className="navbar-start">
           <a className="navbar-item" href="/">Home</a>
           <a className="navbar-item" href="/">
-            <CoolButton type="is-rounded is-danger large">Login</CoolButton>
+            <CoolButton type="is-rounded is-danger">Login</CoolButton>
           </a>
           <a className="navbar-item" href="/">
-            <CoolButton type="is-success large">Signup</CoolButton>
+            <CoolButton type="is-success">Signup</CoolButton>
           </a>
         </div>
       </div>
