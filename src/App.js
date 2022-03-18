@@ -1,8 +1,10 @@
+import React from 'react';
 import './App.css';
+import { Navbar } from './components/Navbar/Navbar';
 
 function App() {
   return (
-    <h1>Bulma</h1>
+    <Navbar />
   );
 }
 
