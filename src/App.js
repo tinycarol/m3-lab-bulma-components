@@ -1,13 +1,16 @@
 import './App.css';
+import Message from './components/message/Message';
 import Navbar from './components/nav/Navbar';
-import FormField from './components/formfield/FormField'
+import Signup from './components/signup/Signup';
 
 function App() {
   return (
     <div>
       <Navbar />
-      <FormField label="Name" type="text" placeholder="e.g Alex Smith" />
-      <FormField label="Email" type="email" placeholder="e.g. alexsmith@gmail.com" />
+      <Signup />
+      <Message isInfo title='Hello World'>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>.
+      </Message>
     </div>
   );
 }
