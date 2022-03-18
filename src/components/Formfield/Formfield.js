@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const FormField = (props) => {
 	return (
 		<div className="field">
@@ -16,5 +15,4 @@ const FormField = (props) => {
 	);
 };
 
-
-export { FormField }
+export { FormField };
