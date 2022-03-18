@@ -2,6 +2,7 @@ import React from "react";
 import CoolButton from "../coolbutton/CoolButton";
 import FormField from "../formfield/FormField";
 import Navbar from "../navbar/Navbar";
+import Message from "../message/Message"
 
 class Signup extends React.Component {
   render() {
@@ -19,6 +20,7 @@ class Signup extends React.Component {
           <CoolButton isSmall isSuccess type="success">
             Submit
           </CoolButton>
+          <Message />
         </div>
       </>
     );
