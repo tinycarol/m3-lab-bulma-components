@@ -55,7 +55,7 @@ function Navbar() {
                 <div className="navbar-item">
                 <div className="field is-grouped">
                     <p className="control">
-                        <CoolButton isSmall isDanger>Login</CoolButton>
+                        <CoolButton isRounded isSmall isDanger>Login</CoolButton>
                     </p>
                     <p className="control">
                         <CoolButton isSmall isSuccess>Signup</CoolButton>

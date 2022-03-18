@@ -30,16 +30,25 @@ const CoolButton = props => {
         isWhite: 'is-white',
     }
 
-    /* const
-    obj1 = { a: 'replace a', b: 'keep b' },
-    obj2 = { a: 'new value a', c: 'ignore c' };
+    const newProps = { ...props };
 
-    for (const key in obj2) if (key in obj1) obj1[key] = obj2[key];
+    for (const key in btnCases) {
+        if (key in newProps) {
+            newProps[key] = btnCases[key];
+        }
+    };
 
-    console.log(props); */
+    let btnClasses = '';
+
+    for (const key in newProps) {
+        if(key === 'children') {
+            continue;
+        }
+        btnClasses += `${newProps[key]} `;
+    };
 
     return (
-        <button className={`button `}>{props.children}</button>
+        <button className={`button ${btnClasses}`}>{newProps.children}</button>
     );
 };
 
