@@ -1,7 +1,7 @@
 const CoolButton = (props) => {
     let buttonColor = ''
     
-    if(props.isPrimary) {
+    if (props.isPrimary) {
         buttonColor = 'is-primary'
     } if (props.isSuccess) {
         buttonColor = 'is-success'

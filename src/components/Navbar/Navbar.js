@@ -1,4 +1,5 @@
 import './Navbar.css'
+import CoolButton from '../CoolButton/CoolButton'
 
 const Navbar = () => {
     return (
@@ -25,12 +26,8 @@ const Navbar = () => {
             <div class="navbar-end">
             <div class="navbar-item">
                 <div class="buttons">
-                <a class="button is-info">
-                    <strong>Sign up</strong>
-                </a>
-                <a class="button is-primary">
-                    Log in
-                </a>
+                    <CoolButton isDanger >Sign up</CoolButton>
+                    <CoolButton isPrimary >Log in</CoolButton>
                 </div>
             </div>
             </div>
