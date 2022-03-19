@@ -1,7 +1,12 @@
 .field{
-    width: 30rem;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+}
+
+.field input {
+    width: 20rem;
 }
