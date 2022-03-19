@@ -1,8 +1,11 @@
 import './App.css';
+import SingUp from './components/SingUp/SingUp'
 
 function App() {
   return (
-    <h1>Bulma</h1>
+    <>
+      <SingUp />
+    </>
   );
 }
 
