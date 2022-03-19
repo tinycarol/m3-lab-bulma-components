@@ -14,14 +14,9 @@ function App() {
       <div>
         <FormField label="Email" type="email" placeholder="e.g. alexsmith@gmail.com" />
       </div>
-      <div>
-        <CoolButton colorButton="is-danger" className="is-rounded my-class">Button 1</CoolButton>
-      </div>
-      <div>
-        <CoolButton colorButton="is-success">Button 2</CoolButton>
-      </div>
     </div>
   );
 }
 
 export default App;
+
