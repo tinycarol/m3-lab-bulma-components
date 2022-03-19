@@ -15,10 +15,10 @@ function App() {
         <FormField label="Email" type="email" placeholder="e.g. alexsmith@gmail.com" />
       </div>
       <div>
-        <CoolButton isSmall isDanger className="is-rounded my-class">Button 1</CoolButton>
+        <CoolButton colorButton="is-danger" className="is-rounded my-class">Button 1</CoolButton>
       </div>
       <div>
-        <CoolButton isSmall isSuccess>Button 2</CoolButton>
+        <CoolButton colorButton="is-success">Button 2</CoolButton>
       </div>
     </div>
   );
