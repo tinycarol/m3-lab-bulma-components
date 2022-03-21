@@ -16,7 +16,7 @@ function Navbar() {
 
                 <div id="navbarBasicExample" className="navbar-menu">
                     <div className="navbar-start">
-                        <a className="navbar-item">
+                        <a className="navbar-item" href="/">
                             Home
                         </a>
                     </div>
@@ -24,10 +24,10 @@ function Navbar() {
                     <div className="navbar-end">
                         <div className="navbar-item">
                             <div className="buttons">
-                                <a className="button is-primary">
+                                <a className="button is-primary" href="#">
                                     <strong>Sign up</strong>
                                 </a>
-                                <a className="button is-light">
+                                <a className="button is-light" href="#">
                                     Log in
                                 </a>
                             </div>
@@ -39,3 +39,6 @@ function Navbar() {
     )
 }
 export default Navbar
+
+
+
