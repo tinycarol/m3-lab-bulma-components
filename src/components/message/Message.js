@@ -1,7 +1,7 @@
 const Message = ({ children, title, ...props }) => {
   const propStyles = Object.entries(props)
     .map(([key, value]) => {
-      return buttonClasses[key];
+      return messageClasses[key];
     })
     .join(" ");
 
@@ -20,7 +20,7 @@ const Message = ({ children, title, ...props }) => {
 
 export default Message;
 
-const buttonClasses = {
+const messageClasses = {
   isInfo: "is-info",
   isBlack: "is-black",
   isCentered: "is-centered",
