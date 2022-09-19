@@ -2,12 +2,12 @@ import './Message.css';
 
 function Message(props) {
     return (
-        <article class={`message ${props.classy}`}>
-            <div class="message-header">
+        <article className={`message ${props.classy}`}>
+            <div className="message-header">
                 <p>{props.title}</p>
-                <button class="delete" aria-label="delete"></button>
+                <button className="delete" aria-label="delete"></button>
             </div>
-            <div class="message-body">
+            <div className="message-body">
                 {props.children}
             </div>
         </article>

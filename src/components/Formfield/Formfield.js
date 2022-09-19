@@ -2,10 +2,10 @@ import './Formfield.css'
 
 function FormField({label, type, placeholder}) {
     return (
-        <div class="field">
-            <label class="label">{label}</label>
-            <div class="control">
-                <input class="input" type={type} placeholder={placeholder} />
+        <div className="field">
+            <label className="label">{label}</label>
+            <div className="control">
+                <input className="input" type={type} placeholder={placeholder} />
             </div>
         </div>
     )
