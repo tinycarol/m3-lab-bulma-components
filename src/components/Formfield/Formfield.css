@@ -1,0 +1,8 @@
+.formfield-container {
+    background-color: rgba(0, 20, 133, 0.3);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 50px;
+    width: 35%
+}
